@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+        <TableRow
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_height="0dp"
+                android:layout_width="0dp" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#808080"
+                android:id="@+id/textNomor"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center|right"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="1000" />
+        </TableRow>
+        <TableRow
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:src="@drawable/sc" />
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:src="@drawable/pin" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textAlamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:src="@drawable/ic_action_call" />
+
+            <TextView
+                android:id="@+id/textTelepon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="-" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

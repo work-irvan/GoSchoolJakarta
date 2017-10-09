@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irvan.muhammad.work.goschooljakarta.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageMonas"
+            android:scaleType="centerCrop"
+            android:src="@drawable/monas"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <RelativeLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <EditText
+                android:id="@+id/editCari"
+                android:hint="Cari Sekolah"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/searchbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_action_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="24dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="10dp"
+            android:layout_below="@id/imageMonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity=""
+                android:textSize="24sp"
+                android:text="Go School Jakarta"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/imageMonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="Cari Lokasi Sekolah Yang Anda Tuju!"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/imageMonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <ListView
+            android:layout_below="@id/linear1"
+            android:id="@+id/listSekolah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>
